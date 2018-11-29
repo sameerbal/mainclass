@@ -1,0 +1,21 @@
+package sqlPathReading;
+
+import java.util.ArrayList;
+
+public class Demo {
+	public static SqlFileReturn p = new SqlFileReturn();
+	public static SqlQueryReturn r = new SqlQueryReturn();
+	public static void main(String[] args) throws Exception {
+		p.userInput();
+		ArrayList<String> ar2 = r.sourceSqlReturn();
+		ArrayList<String> ar3 = r.targetSqlReturn();
+		for (String num : ar2) { 		      
+	           System.out.println(num); 		
+	      }
+		for (String num : ar3) { 		      
+	           System.out.println(num); 		
+	      }
+	}
+	
+
+}
